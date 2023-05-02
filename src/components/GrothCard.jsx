@@ -5,7 +5,9 @@ const GrothCard = ({ data }) => {
 		<div className="flex w-full sm:flex-row flex-col justify-between items-center sm:gap-0 gap-20">
 			<div className="sm:w-[50%] grid grid-flow-col grid-cols-[64.14px_auto] gap-6">
 				<div className="w-[64.14px] h-[64.14px]">
-					<div className="box-border rounded-[50%] flex items-center justify-center text-center font-medium text-[35px] bg-gradient-to-r from-[#FF63F9] via-[#E41EAD] to-[#FF008D] p-[1px]">
+					<div
+						className={`box-border rounded-[50%] flex items-center justify-center text-center font-medium text-[35px] bg-gradient-to-r from-[${data.gradient.start}] via-[${data.gradient.mid}] to-[${data.gradient.end}] p-[1px]`}
+					>
 						<span className="box-border w-[62px] h-[62px] flex justify-center items-center bg-black rounded-[50%] text-white">
 							{data.no}
 						</span>
@@ -13,7 +15,9 @@ const GrothCard = ({ data }) => {
 				</div>
 
 				<div className="flex flex-col gap-6 items-start">
-					<p className="font-medium text-[35px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF63F9] via-[#E41EAD] to-[#FF008D] ">
+					<p
+						className={`font-medium text-[35px] text-transparent bg-clip-text bg-gradient-to-r from-[${data.gradient.start}] via-[${data.gradient.mid}] to-[${data.gradient.end}]`}
+					>
 						{data.title}
 					</p>
 					<p className="text-justify capitalize text-white leading-8">
