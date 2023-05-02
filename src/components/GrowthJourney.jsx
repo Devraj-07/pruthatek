@@ -54,7 +54,7 @@ const data = [
 
 function GrowthJourney() {
 	return (
-		<div className="flex flex-col px-20 sm:gap-[150px] gap-20 py-8 bg-black">
+		<div className="flex flex-col px-20 sm:gap-[250px] gap-20 py-20 bg-black overflow-hidden">
 			{/* first card */}
 			{data ? (
 				<>

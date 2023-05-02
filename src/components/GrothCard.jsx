@@ -44,11 +44,11 @@ const GrothCard = ({ data }) => {
 					</button>
 				</div>
 			</div>
-			<div className="sm:max-w-[45%] overflow-hidden">
-				{/* <div className="absolute right-0 sm:w-[50%] w-full h-full">
+			<div className="relative sm:max-w-[45%] flex justify-center items-center">
+				<div className="absolute top-[-200px] right-[-125px] w-[175%] h-[175%]">
 					<img src={data.bg} alt="." />
-				</div> */}
-				<img className="z-1 w-[90%]" src={data.img} alt="." />
+				</div>
+				<img className="z-1 w-[80%]" src={data.img} alt="." />
 			</div>
 		</div>
 	);
