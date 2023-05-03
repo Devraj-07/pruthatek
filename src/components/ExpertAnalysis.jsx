@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import ExpertAnalysisCard from "./ExpertAnalysisCard";
 import img from "../imgs/expertAnalysis.png";
 import userImg from "../imgs/expertAnalysisUser.png";
@@ -57,21 +58,26 @@ const ExpertAnalysis = () => {
 	];
 
 	return (
-		<div className="overflow-hidden">
+		<div className="overflow-hidden p-2">
 			<div className="flex flex-col justify-center items-center gap-4 py-20 px-4">
 				<p className="text-white text-3xl font-bold">Expert Analysis</p>
 			</div>
 			{data ? (
 				<Swiper
-					className="text-white overflow-x-hidden"
-					spaceBetween={50}
-					slidesPerView={3}
+					className="text-white overflow-x-hidden flex"
+					spaceBetween={70}
+					slidesPerView="auto"
+					loopedSlides={8}
+					freeMode={true}
 					onSlideChange={() => console.log("slide change")}
 					onSwiper={(swiper) => console.log(swiper)}
 				>
 					{data.map((p) => {
 						return (
-							<SwiperSlide key={p.id}>
+							<SwiperSlide
+								className="flex max-w-[360px]"
+								key={p.id}
+							>
 								<ExpertAnalysisCard data={p} />
 							</SwiperSlide>
 						);
