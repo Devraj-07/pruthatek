@@ -57,13 +57,13 @@ function GrowthJourney() {
 		<>
 			<div className="flex flex-col justify-center items-center gap-4 py-20">
 				<div>
-					<p className="text-white text-3xl font-bold">
+					<p className="text-white text-3xl font-bold text-center">
 						The Growth Journey: Navigating the Path from Idea to
 						Success
 					</p>
 				</div>
 				<div>
-					<p className="text-white text-xl font-light">
+					<p className="text-white text-xl font-light text-center">
 						From Method to Engagement: Comprehensive Solutions for
 						Business Success
 					</p>

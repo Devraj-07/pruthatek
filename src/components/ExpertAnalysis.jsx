@@ -60,7 +60,9 @@ const ExpertAnalysis = () => {
 	return (
 		<div className="overflow-hidden p-2">
 			<div className="flex flex-col justify-center items-center gap-4 py-20 px-4">
-				<p className="text-white text-3xl font-bold">Expert Analysis</p>
+				<p className="text-white text-3xl font-bold text-center">
+					Expert Analysis
+				</p>
 			</div>
 			{data ? (
 				<Swiper

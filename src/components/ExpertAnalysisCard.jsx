@@ -4,7 +4,7 @@ const ExpertAnalysisCard = ({ data }) => {
 	return (
 		<div className="text-white  max-w-[360px] p-[2px] max-h-[280px] rounded-2xl bg-gradient-to-t from-[#F05225] to-[#eea92000]">
 			<div className="bg-black w-full h-full rounded-2xl">
-				<div className="bg-[#3a3a3a4d] p-4 w-full h-full flex flex-col justify-between">
+				<div className="bg-[#3a3a3a4d] p-4 w-full h-full flex flex-col gap-2">
 					<div>
 						<p className="text-sm font-medium">{data.title}</p>
 					</div>
