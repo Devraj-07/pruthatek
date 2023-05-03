@@ -20,11 +20,11 @@ const GrothCard = ({ data }) => {
 					>
 						{data.title}
 					</p>
-					<p className="text-justify capitalize text-white leading-8">
+					<p className="text-justify capitalize text-white text-lg leading-8">
 						{data.content}
 					</p>
 					<button className="mt-6 text-white flex gap-8 justify-center items-center border-[1px] border-white px-[38px] py-2 rounded-md">
-						<span>Explore</span>
+						<span className="font-medium">Explore</span>
 						<span>
 							<svg
 								width="18"

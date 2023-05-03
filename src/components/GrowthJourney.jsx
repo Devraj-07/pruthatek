@@ -54,18 +54,34 @@ const data = [
 
 function GrowthJourney() {
 	return (
-		<div className="flex flex-col px-20 sm:gap-[250px] gap-20 py-20 bg-black overflow-hidden">
-			{/* first card */}
-			{data ? (
-				<>
-					{data.map((p) => {
-						return <GrothCard key={p.no} data={p} />;
-					})}
-				</>
-			) : (
-				<></>
-			)}
-		</div>
+		<>
+			<div className="flex flex-col justify-center items-center gap-4 py-20">
+				<div>
+					<p className="text-white text-3xl font-bold">
+						The Growth Journey: Navigating the Path from Idea to
+						Success
+					</p>
+				</div>
+				<div>
+					<p className="text-white text-xl font-light">
+						From Method to Engagement: Comprehensive Solutions for
+						Business Success
+					</p>
+				</div>
+			</div>
+			<div className="flex flex-col px-20 sm:gap-[250px] gap-20 py-20">
+				{/* first card */}
+				{data ? (
+					<>
+						{data.map((p) => {
+							return <GrothCard key={p.no} data={p} />;
+						})}
+					</>
+				) : (
+					<></>
+				)}
+			</div>
+		</>
 	);
 }
 
